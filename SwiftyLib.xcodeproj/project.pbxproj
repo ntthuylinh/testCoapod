@@ -16,6 +16,7 @@
 		017209FC246AEB6A001D8A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017209FA246AEB6A001D8A09 /* Main.storyboard */; };
 		017209FE246AEB6D001D8A09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017209FD246AEB6D001D8A09 /* Assets.xcassets */; };
 		01720A01246AEB6D001D8A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017209FF246AEB6D001D8A09 /* LaunchScreen.storyboard */; };
+		01720A07246AED15001D8A09 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01720A06246AED15001D8A09 /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		017209FD246AEB6D001D8A09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01720A00246AEB6D001D8A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01720A02246AEB6D001D8A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01720A06246AED15001D8A09 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				017209D7246AEB04001D8A09 /* SwiftyLib.h */,
 				017209D8246AEB04001D8A09 /* Info.plist */,
+				01720A06246AED15001D8A09 /* SwiftyLib.swift */,
 			);
 			path = SwiftyLib;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					017209D3246AEB04001D8A09 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					017209DC246AEB04001D8A09 = {
 						CreatedOnToolsVersion = 11.4;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01720A07246AED15001D8A09 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		017209E9246AEB04001D8A09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22T2R84KR5;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = linhnguyen.SwiftyLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		017209EA246AEB04001D8A09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 22T2R84KR5;
@@ -485,6 +493,7 @@
 		017209EC246AEB04001D8A09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22T2R84KR5;
 				INFOPLIST_FILE = SwiftyLibTests/Info.plist;
@@ -503,6 +512,7 @@
 		017209ED246AEB04001D8A09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22T2R84KR5;
 				INFOPLIST_FILE = SwiftyLibTests/Info.plist;
