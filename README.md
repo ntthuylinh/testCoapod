@@ -2,3 +2,4 @@
 # library
 # library
 # library
+# staticlibrary
